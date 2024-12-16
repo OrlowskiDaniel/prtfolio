@@ -291,6 +291,26 @@ footer {
     width: 900px;
 }
 
+.skills-exampels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+.example-box {
+    width: 450px;
+    height: 160px;
+    border: 5px solid rgb(97, 1, 97);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(0, 8, 59);
+    color: white;
+}
+.example-box h3 {
+    font-size: 25px;
+}
+
+
 
 .contact {
     width: 100%;
@@ -369,6 +389,9 @@ footer {
 }
 
 
+
+
+
 @media(max-width: 1200px){
     .logo {
         font-size: 2vw;
@@ -409,6 +432,9 @@ footer {
     .landing-page svg {
         width: 400px;
         height: 400px;
+    }
+    .skills-main {
+        flex-direction: column;
     }
 
 }
