@@ -10,8 +10,8 @@ function hideSidebar() {
 }
 
 
-var xValues = ["HTML", "CSS", "JavaScript", "Java" ];
-var yValues = [25, 25, 25, 25 ];
+var xValues = ["HTML", "CSS", "JavaScript", "Java","C#" ];
+var yValues = [25, 25, 25, 20, 5 ];
 var barColors = [
   "#b91d47",
   "#00aba9",
