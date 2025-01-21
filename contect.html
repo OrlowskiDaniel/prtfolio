@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="stylesheet" href="css/style.css">
     <title>Sjabloon</title>
 </head>
 <body>
     <header>
-        <h1 class="logo"><a href="index.html">Software <span>Developer</span></a></h1>
+        <p class="logo"><a href="index.html">Software <span>Developer</span></a></p>
         <nav>
             <ul class="sidebar list-hover-slide">
                 <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
@@ -30,15 +30,15 @@
     </header>
     <main>
         <section class="contact">
-            <h1>Get in <span>touch<span></h1>
+            <h1>Get in <span>touch</span></h1>
             <div class="contact-main">
                 <div class="contact-info">
                     <div class="info-item">
-                        <label for="email">Email</label>
+                        <label >Email</label>
                         <p>1201344@student.roc-nijmegen.nl</p>
                     </div>
                     <div class="info-item">
-                        <label for="working">School Hours</label>
+                        <label>School Hours</label>
                         <p>8:30 AM - 5:00 PM</p>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                         <input type="text" required="" class="userName" placeholder="Name">
                         <input type="email" required="" class="userEmail" placeholder="Email address">
                         <input type="text" class="subject" required="" placeholder="Subject">
-                        <textarea name="" id="message" required="" placeholder="Message"></textarea>
+                        <textarea name="message" id="message" required="" placeholder="Message"></textarea>
                     </form>
                     <button class="submit-button">SUMBIT</button>
                 </div>
@@ -59,8 +59,8 @@
         <div class="line"></div>
         <div class="footer-items">
             <div class="footer-buttons">
-                <button type="button" class="footer-button main-style-button">Contact me</button>
-                <button type="button" class="footer-button main-style-button">Resume download</button>
+                <a class="footer-button main-style-button">Contact me</a>
+                <a class="footer-button main-style-button">Resume download</a>
                 
             </div>
             <ul class="icons"> 
@@ -73,6 +73,6 @@
         </div>
         
     </footer>
+    <script src="script/myScript.js"></script>
 </body>
-<script src="script/myScript.js"></script>
 </html>

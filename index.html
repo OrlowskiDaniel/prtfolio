@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script/myScript.js"></script>
-    <!--TODO- 
-    -- add logo to website
-    -- 
-    -->
+    
 </head>
 <body>
     <header>
-        <h1 class="logo"><a href="index.html">Software <span>Developer</span></a></h1>
+        <p class="logo"><a href="index.html">Software <span>Developer</span></a></p>
         <nav>
             <ul class="sidebar list-hover-slide">
                 <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
@@ -36,10 +32,11 @@
         </nav>
     </header>
     <main>
+        
         <section class="landing-page">
             <div class="text-landing-page">
-                <h1>HI<br>I’M <span>Daniel Orlowksi</span></h1>
-                <h2>Software Developer</h2>
+                <h2><span>HI<br>I’M</span> Daniel Orlowksi</h2>
+                <h2 class="software-developer-text"><span>Software Developer</span></h2>
             </div>
             <svg width="30vw" height="30vw" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="120" height="120" fill="#EFF1F3"/>
@@ -47,7 +44,7 @@
                 </svg>
         </section>
         <section class="about-index">
-            <h1>Some Things <span>About me</span></h1>
+            <h2>Some Things <span>About me</span></h2>
             <div class="text-about-index">
                 <p>I am <span>Daniel Orlowski</span>, currently studying at <span>ROC Nijemgen</span> in direction Software Developer</p>
                 <p>I love working with code my front-end development skills are proficient understanding of <span>HTML, CSS</span> and beginner in <span>JavaScript</span></p>
@@ -55,15 +52,17 @@
                 <p>I love learning new <span>technologies</span> and developing my skills further</p>
                 <p>Check out more <span>about</span> me</p>
             </div>
-            <button type="button" class="main-style-button">Resume+</button>
+            <form method="get" action="file.doc">
+            <button type="submit" class="main-style-button">Resume+</button>
+            </form>
         </section>
     </main>
     <footer>
         <div class="line"></div>
         <div class="footer-items">
             <div class="footer-buttons">
-                <button type="button" class="footer-button main-style-button">Contact me</button>
-                <button type="button" class="footer-button main-style-button">Resume download</button>
+                <a class="footer-button main-style-button" href="contect.html">Contact me</a>
+                <a class="footer-button main-style-button" href="path_to_file" download="proposed_file_name">Resume download</a>
                 
             </div>
             <ul class="icons"> 
@@ -76,5 +75,6 @@
         </div>
         
     </footer>
+    <script src="script/myScript.js"></script>
 </body>
 </html>

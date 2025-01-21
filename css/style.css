@@ -8,10 +8,10 @@ body {
     min-height: 100vh;
 }
 /*TODO
-* add shadow for more deph
-* background for landing page
+* background
 * box disign 
 */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -22,6 +22,8 @@ header {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 9px;
     transition: top 0.2s ease-in-out;
 }
+
+
 .logo {
     text-transform: lowercase;
     text-align: center;
@@ -127,6 +129,10 @@ main {
 section {
     padding-top: 70px;
 }
+span {
+    color: #008507;
+    text-shadow: 0px 0px 10px currentColor;
+}
 .landing-page {
     height: 100vh;
     width: 100%;
@@ -140,11 +146,43 @@ section {
     letter-spacing: 2px;
     line-height: 1.8;
     font-size: larger;
-    color: #008507;
+    color: black;
     font-size: 2vw;
 }
-.text-landing-page span, h2 {
-    color: black;
+.software-developer-text {
+    &::after {
+		content: '';
+		display: inline-block;
+		width: 15px;
+        height: 40px;
+		background-color: #008507a1;
+		margin-left: .1em;
+		animation: blink 1s linear infinite forwards;
+        box-shadow: 0px 0px 15px #008507a1;
+	}
+}
+@keyframes blink {
+	0% {
+		visibility: visible;
+	}
+	
+	50% {
+		visibility: visible;
+	}
+	
+	51% {
+		visibility: hidden;
+	}
+	
+	100% {
+		visibility: hidden;
+	}
+}
+.text-landing-page span {
+    color: #008507;
+    text-shadow: 0px 0px 10px currentColor;
+    
+    
 }
 .landing-page svg {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -157,13 +195,14 @@ section {
     align-items: center;
     gap: 20px;
 }
-.about-index h1 {
+.about-index h2 {
     text-align: center;
     font-size: 4vw;
     margin-bottom: 20px;
 }
 .about-index span, .skills span {
     color: #008507;
+    text-shadow: 0px 0px 10px currentColor;
 }
 .text-about-index {
     display: flex;
@@ -175,8 +214,8 @@ section {
 }
 
 .main-style-button {
-    width: 200px;
-    height: 70px;
+    width: 180px;
+    height: 60px;
     font-size: 20px;
     font-weight: 800;
     background-color: #2ad89e;
@@ -184,8 +223,14 @@ section {
     border-radius: 20px;
     border: 5px solid #1a811f;
 
-    text-align: center;
+    
     text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main-style-button:hover  {
     background-color: #35c997;
@@ -195,6 +240,7 @@ section {
     text-shadow: #008507 1px 1px;
 
     transition: .2s;
+    
 }
 
 footer {
@@ -230,6 +276,9 @@ footer {
     height: 60px;
     background-color: transparent;
     border: none #1a4881;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .button-line {
     color: black;
@@ -237,6 +286,8 @@ footer {
     font-weight: 900;
 }
 .footer-button:hover {
+    width: 188px;
+    height: 53px;
     background-color: #22a6c4;
     color: black;
     border-color: #1a4881;
@@ -249,6 +300,7 @@ footer {
     justify-content: center;
     gap: 40px;
     list-style: none;
+    
 }
 .icons svg {
     width: 45px;
@@ -258,7 +310,6 @@ footer {
 .icons svg:hover {
     fill: orange;
 }
-
 
 
 .skills {
@@ -323,6 +374,8 @@ footer {
     border: 3px solid #056d4a;
     background-color: #03C988;
     font-weight: 700;
+    text-decoration: none;
+    color: black;
 }
 .example-button:hover {
     box-shadow: 0 0 10px 0 #1a811f inset, 0 0 10px 4px #1a811f;
@@ -335,6 +388,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     gap: 10vh;
 }
 .projects span {
@@ -346,17 +400,27 @@ footer {
 }
 .box-for-projects {
     width: 80%;
-    height: 400px;
+    height: 450px;
     border-radius: 15px;
     border: 5px solid #008507;
+    background-color: #46e4b0;
+    
 }
 .box-for-projects h2 {
-    height: 10%;
+    height: 15%;
     font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .all-projects {
-    height: 90%;
+    height: 85%;
     overflow: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    
 }
 /* width */
 .all-projects::-webkit-scrollbar {
@@ -377,6 +441,24 @@ footer {
     background: gray; 
 }
 
+.project-box {
+    border: black 5px solid;
+    width: 30%;
+    height: 200px;
+
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    background-color: rgb(196, 194, 194);
+}
+.project-name {
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: 600;
+}
 
 
 
@@ -435,6 +517,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 2vh;
+    height: 650px;
 }
 .about-item {
     display: flex;
@@ -447,6 +530,7 @@ footer {
     font-size: 60px;
     margin-bottom: 5vh;
     margin: 10px 100px;
+    text-align: center;
 }
 .about-item h2 {
     font-size: 40px;
@@ -455,6 +539,7 @@ footer {
 .about-item h4 {
     font-size: 30px;
     color: #008507;
+    text-shadow: 0px 0px 10px currentColor;
 }
 .about-item p {
     font-size: 20px;
@@ -499,7 +584,8 @@ footer {
 }
 .contact-info {
     display: flex;
-    gap: 10vw;
+    width: 50%;
+    gap: 5vw;
     align-self: center;
     background-color: #48b5cd;
     border-radius: 10px;

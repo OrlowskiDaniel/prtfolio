@@ -36,6 +36,3 @@ new Chart("myChart", {
     }
   }
 });
-
-
-
