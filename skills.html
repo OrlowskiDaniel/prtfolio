@@ -7,6 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <body>
+    <!--Responsive header with simple javascript-->
     <header>
         <p class="logo"><a href="index.html">Software <span>Developer</span></a></p>
         <nav>
@@ -31,10 +32,12 @@
         </nav>
     </header>
     <main>
+        <!--Skills section-->
         <section class="skills">
             <h1 class="skills-titel"><span>M</span>y sk<span>i</span>l<span>ls</span></h1>
             <div class="skills-main">
                 <div class="skills-info">
+                    <!--Canvas with library, in the future I will change it for better one-->
                     <div class="skills-statistic">
                         <canvas id="myChart" style="width:900px"></canvas>
                     </div>
@@ -47,7 +50,7 @@
                             <h4>Portfolio Website</h4>
                             <p>In process of making my portfolio for school</p>
                         </div>
-                        <a href="" class="example-button">GitHub</a>
+                        <a href="" class="example-button main-style-small-button">GitHub</a>
                     </div>
                     <div class="example-box">
                         <h3>My reacent finished project</h3>
@@ -55,18 +58,20 @@
                             <h4>Florpy Blord</h4>
                             <p>Simple game made in Unity</p>
                         </div>
-                        <a href="" class="example-button">GitHub</a>
+                        <a href="" class="example-button main-style-small-button">GitHub</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <!--Footer (not complitly responsive) No resume-->
     <footer>
         <div class="line"></div>
         <div class="footer-items">
             <div class="footer-buttons">
                 <a class="footer-button main-style-button">Contact me</a>
-                <a class="footer-button main-style-button">Resume download</a>
+                <!--no resume-->
+                <a class="footer-button main-style-button" href="path_to_file" download="proposed_file_name">Resume download</a>
                 
             </div>
             <ul class="icons"> 

@@ -9,7 +9,7 @@ body {
 }
 /*TODO
 * background
-* box disign 
+* decoration 
 */
 
 header {
@@ -181,26 +181,24 @@ span {
 .text-landing-page span {
     color: #008507;
     text-shadow: 0px 0px 10px currentColor;
-    
-    
 }
 .landing-page svg {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.about-index {
+.about-on-index-page {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
-.about-index h2 {
+.about-on-index-page h2 {
     text-align: center;
     font-size: 4vw;
     margin-bottom: 20px;
 }
-.about-index span, .skills span {
+.about-on-index-page span, .skills span {
     color: #008507;
     text-shadow: 0px 0px 10px currentColor;
 }
@@ -214,8 +212,8 @@ span {
 }
 
 .main-style-button {
-    width: 180px;
-    height: 60px;
+    width: 160px;
+    height: 50px;
     font-size: 20px;
     font-weight: 800;
     background-color: #2ad89e;
@@ -240,135 +238,8 @@ span {
     text-shadow: #008507 1px 1px;
 
     transition: .2s;
-    
 }
-
-footer {
-    background: linear-gradient(to top, #57c1eb 0%,#246fa8 100%);
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    
-    gap: 10px;
-    padding:  10px 0px;
-}
-.line {
-    width: 80%;
-    border-bottom: 5px solid black;
-}
-.footer-items {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10vw;
-}
-.footer-buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-.footer-button {
-    width: 200px;
-    height: 60px;
-    background-color: transparent;
-    border: none #1a4881;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.button-line {
-    color: black;
-    font-size: 30px;
-    font-weight: 900;
-}
-.footer-button:hover {
-    width: 188px;
-    height: 53px;
-    background-color: #22a6c4;
-    color: black;
-    border-color: #1a4881;
-    box-shadow: 0 0 10px 0 #1a4881 inset, 0 0 10px 4px #1a4881b8;
-    text-shadow: #133660 1px 1px;
-}
-
-.icons {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    list-style: none;
-    
-}
-.icons svg {
-    width: 45px;
-    height: 45px;
-}
-
-.icons svg:hover {
-    fill: orange;
-}
-
-
-.skills {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 10vh;
-}
-.skills h1 {
-    text-align: center;
-    font-size: 4vw;
-}
-.skills-main {
-    display: flex;
-    justify-content: space-evenly;
-    height: 100%;
-}
-.skills-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 65vh;
-    width: 45%;
-}
-.skills-statistic {
-    height: 100%;
-    width: 100%;
-}
-#myChart {
-    height: 900px;
-    width: 900px;
-}
-
-.skills-exampels {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 400px;
-}
-.example-box {
-    width: 450px;
-    height: 160px;
-    border: 5px solid rgb(97, 1, 97);
-    border-radius: 20px;
-    padding: 10px;
-    background-color: rgb(0, 8, 59);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.example-box h3 {
-    font-size: 25px;
-}
-.example-box a {
-    align-self: flex-end;
-}
-.example-button {
+.main-style-small-button  {
     padding: 8px;
     border-radius: 10px;
     border: 3px solid #056d4a;
@@ -377,128 +248,10 @@ footer {
     text-decoration: none;
     color: black;
 }
-.example-button:hover {
+.main-style-small-button:hover {
     box-shadow: 0 0 10px 0 #1a811f inset, 0 0 10px 4px #1a811f;
     text-shadow: #008507 1px 1px;
 }
-
-
-.projects {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    gap: 10vh;
-}
-.projects span {
-    color: #008507;
-}
-.projects h1 {
-    text-align: center;
-    font-size: 4vw;
-}
-.box-for-projects {
-    width: 80%;
-    height: 450px;
-    border-radius: 15px;
-    border: 5px solid #008507;
-    background-color: #46e4b0;
-    
-}
-.box-for-projects h2 {
-    height: 15%;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.all-projects {
-    height: 85%;
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    
-}
-/* width */
-.all-projects::-webkit-scrollbar {
-    width: 20px;
-}
-  /* Track */
-.all-projects::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px black; 
-    border-radius: 10px;
-}
-/* Handle */
-.all-projects::-webkit-scrollbar-thumb {
-    background: black; 
-    border-radius: 10px;
-}
-/* Handle on hover */
-.all-projects::-webkit-scrollbar-thumb:hover {
-    background: gray; 
-}
-
-.project-box {
-    border: black 5px solid;
-    width: 30%;
-    height: 200px;
-
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    gap: 10px;
-    background-color: rgb(196, 194, 194);
-}
-.project-name {
-    margin-top: 10px;
-    font-size: larger;
-    font-weight: 600;
-}
-
-
-
-.blog-main {
-    display: flex;
-    flex-direction: column;
-    margin: 0 40px;
-    height: 100vh;
-}
-.blog-main h1 {
-    font-size: 60px;
-}
-.blog-main h4 {
-    font-size: 20px;
-    margin-bottom: 50px;
-}
-.line-blog {
-    width: 100%;
-    margin: 20px 0;
-    border-bottom: 2px solid #008507;
-}
-.blog-item {
-    display: flex;
-    font-size: large;
-    gap: 60px;
-}
-
-.blog-time {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    color: gray;
-}
-
-.blog-titel {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
 
 .qualities {
     display: flex;
@@ -560,6 +313,187 @@ footer {
    margin-top: 40px;
 }
 
+
+.skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+.skills h1 {
+    text-align: center;
+    font-size: 4vw;
+}
+.skills-main {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.skills-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    width: 45%;
+}
+.skills-statistic {
+    height: 100%;
+    width: 100%;
+}
+#myChart {
+    height: 900px;
+    width: 900px;
+}
+
+.skills-exampels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+.example-box {
+    width: 450px;
+    height: 160px;
+    border: 5px solid rgb(97, 1, 97);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(0, 8, 59);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.example-box h3 {
+    font-size: 25px;
+}
+.example-box a {
+    align-self: flex-end;
+}
+
+
+.projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10vh;
+}
+.projects span {
+    color: #008507;
+}
+.projects h1 {
+    text-align: center;
+    font-size: 4vw;
+}
+.box-for-projects {
+    width: 80%;
+    height: 70vh;
+    border-radius: 15px;
+    border: 5px solid #005f05;
+    background-color: black;
+    
+}
+.box-for-projects h2 {
+    height: 15%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 5px whitesmoke;
+}
+.all-projects {
+    height: 85%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+/* width */
+.all-projects::-webkit-scrollbar {
+    width: 15px;
+}
+  /* Track */
+.all-projects::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px whitesmoke; 
+    border-radius: 10px;
+}
+/* Handle */
+.all-projects::-webkit-scrollbar-thumb {
+    background: whitesmoke; 
+    border-radius: 10px;
+}
+/* Handle on hover */
+.all-projects::-webkit-scrollbar-thumb:hover {
+    background: gray; 
+}
+.project-box {
+    border: #008507 3px solid;
+    box-shadow: inset 0 0 3px #008507;
+    width: 30%;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    background-color: #9ff7b0;
+}
+.project-name {
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: 600;
+}
+.project-content {
+    height: 70%;
+}
+.project-contect-button {
+    align-self: flex-end;
+    margin: 15px;
+}
+
+
+
+.blog-main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    height: 100vh;
+}
+.blog-main h1 {
+    font-size: 60px;
+}
+.blog-main h4 {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.line-blog {
+    width: 100%;
+    margin: 20px 0;
+    border-bottom: 2px solid #008507;
+}
+.blog-item {
+    display: flex;
+    font-size: large;
+    gap: 60px;
+}
+
+.blog-time {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: gray;
+}
+
+.blog-titel {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
 
 
 .contact {
@@ -639,8 +573,72 @@ footer {
     font-size: 20px;
 }
 
+footer {
+    background: linear-gradient(to top, #57c1eb 0%,#246fa8 100%);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    gap: 10px;
+    padding:  10px 0px;
+}
+.line {
+    width: 80%;
+    border-bottom: 5px solid black;
+}
+.footer-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10vw;
+}
+.footer-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.footer-button {
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    border: none #1a4881;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-line {
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+}
+.footer-button:hover {
+    width: 188px;
+    height: 53px;
+    background-color: #22a6c4;
+    color: black;
+    border-color: #1a4881;
+    box-shadow: 0 0 10px 0 #1a4881 inset, 0 0 10px 4px #1a4881b8;
+    text-shadow: #133660 1px 1px;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    
+}
+.icons svg {
+    width: 45px;
+    height: 45px;
+}
 
-
+.icons svg:hover {
+    fill: orange;
+}
 
 
 @media(max-width: 1200px){
