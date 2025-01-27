@@ -4,14 +4,15 @@
     font-family: "Noto Sans Mono", monospace;
     font-style: normal;
 }
-body {
-    min-height: 100vh;
-}
 /*TODO
 * background
 * decoration 
 */
+body {
+    min-height: 100vh;
+}
 
+/* header of website */
 header {
     display: flex;
     justify-content: space-between;
@@ -22,8 +23,6 @@ header {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 9px;
     transition: top 0.2s ease-in-out;
 }
-
-
 .logo {
     text-transform: lowercase;
     text-align: center;
@@ -90,8 +89,13 @@ nav a {
 .menu-button {
     display: none;
 }
+
+/* list item hover animation */
 .list-hover-slide{
-  
+    
+    /* position relavite to make elements absoloutliy positioned relative to parent and not the document 
+    *  hidden overflow to hide the moves outsite parent
+    */
     li{
       position: relative;
       overflow: hidden;
@@ -100,6 +104,10 @@ nav a {
     a{
       transition: .35s ease color;
       
+      /* pseudo element
+      * display block makes it cover the entire a element
+      * Start at -100% left when hoverd goes to 0 left
+       */
       &:before{
         content: '';
         display: block;
@@ -112,9 +120,7 @@ nav a {
         transition: .35s ease left;
       }
       
-      &.is-current,
       &:hover{
-        
         &:before{
           left: 0;
         }
@@ -129,6 +135,7 @@ main {
 section {
     padding-top: 70px;
 }
+/* span for all green text on website */
 span {
     color: #008507;
     text-shadow: 0px 0px 10px currentColor;
@@ -149,12 +156,18 @@ span {
     color: black;
     font-size: 2vw;
 }
+
+/* Blinking animation  */
 .software-developer-text {
+    /* pseudo variable with blinking animation
+    * display inline block is to make it inline with text and have with and height values
+    * em size makes it the size of font and this is good for reusability 
+    */
     &::after {
 		content: '';
 		display: inline-block;
-		width: 15px;
-        height: 40px;
+		width: .3em;
+        height: .8em;
 		background-color: #008507a1;
 		margin-left: .1em;
 		animation: blink 1s linear infinite forwards;
@@ -211,6 +224,7 @@ span {
     gap: 2vw;
 }
 
+/* Styles for buttons */
 .main-style-button {
     width: 160px;
     height: 50px;
@@ -253,6 +267,7 @@ span {
     text-shadow: #008507 1px 1px;
 }
 
+/* About page */
 .qualities {
     display: flex;
     flex-direction: column;
@@ -313,7 +328,7 @@ span {
    margin-top: 40px;
 }
 
-
+/* Skills page */
 .skills {
     height: 100vh;
     display: flex;
@@ -371,7 +386,7 @@ span {
     align-self: flex-end;
 }
 
-
+/* projects page */
 .projects {
     height: 100vh;
     display: flex;
@@ -430,6 +445,7 @@ span {
 .all-projects::-webkit-scrollbar-thumb:hover {
     background: gray; 
 }
+/* Box for all projects from github need better style */
 .project-box {
     border: #008507 3px solid;
     box-shadow: inset 0 0 3px #008507;
@@ -457,7 +473,7 @@ span {
 }
 
 
-
+/* Blog page */
 .blog-main {
     display: flex;
     flex-direction: column;
@@ -495,7 +511,7 @@ span {
     gap: 6px;
 }
 
-
+/* Contect page */
 .contact {
     width: 100%;
     height: 90vh;
@@ -573,6 +589,7 @@ span {
     font-size: 20px;
 }
 
+/* Footer */
 footer {
     background: linear-gradient(to top, #57c1eb 0%,#246fa8 100%);
     width: 100%;
